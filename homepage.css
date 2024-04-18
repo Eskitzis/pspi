@@ -28,12 +28,6 @@
     display: flex;
     list-style: none;
 }
-.header .wrapper .navMenu ul li{
-    padding: 0px 20px;
-}
-.header .wrapper .navMenu ul li a{
-    color: black;
-}
 .footer{
     bottom: 0;
     width: 100%;

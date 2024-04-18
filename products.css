@@ -28,12 +28,6 @@
     display: flex;
     list-style: none;
 }
-.header .wrapper .navMenu ul li {
-    padding: 0px 20px;
-}
-.header .wrapper .navMenu ul li a {
-    color: black;
-}
 .footer {
     bottom: 0;
     width: 100%;
@@ -44,13 +38,13 @@
     margin-top: 50px;
 }
 .frame_4 {  
-    height: 600px;  
+    height: auto;  
     width: 1200px;  
     margin-top: 50px !important;    
     margin: 0 auto;  
 }
 .frame_5 {  
-    height: 600px;  
+    height: auto;  
     width: 1200px;  
     margin-top: 50px !important;    
     margin: 0 auto;  

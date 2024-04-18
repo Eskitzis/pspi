@@ -67,10 +67,13 @@
     width: 600px;
 }
 .frame_2 .content_1 .content_left{
+    display: flex;
     width: 300px;
 }
-.frame_2 .content_1 .content_left ul{
-    list-style: none;
+.frame_2 .content_1 .content_left ul li a{
+    text-decoration: none;
+    color: black;
+    cursor: none;
 }
 .frame_2 .content_1 .content_right{
     width: 300px;

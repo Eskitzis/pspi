@@ -46,7 +46,7 @@
     display: flex;
     height: 400px;
     width: 1200px;
-    padding-top: 50px;
+    margin-top: 50px !important;
     margin: 0 auto;
 }
 .frame_1 .content{
@@ -60,14 +60,14 @@
     display: flex;
     height: 400px;
     width: 1200px;
-    padding-top: 50px;
+    margin-top: 50px !important ;
     margin: 0 auto;
 }
 .frame_2 .content_1{
     width: 600px;
+    display: flex;
 }
 .frame_2 .content_1 .content_left{
-    display: flex;
     width: 300px;
 }
 .frame_2 .content_1 .content_left ul li a{
@@ -80,5 +80,16 @@
 }
 .frame_2 .content_2{
     width: 600px;
+    display: flex;
 }
+.frame_2 .content_2 .content_boxes{
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+}
+.frame_2 .content_2 .content_boxes img{
+    width: 300px;
+    height: 200px;
+}
+
 /* END CODE HERE */

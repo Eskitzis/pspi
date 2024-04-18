@@ -41,6 +41,18 @@
     border-top: 1px solid lightgray;
     text-align: center;
     line-height: 100px;
-    margin-top: 50px !important;
+    margin-top: 50px;
+}
+.frame_4 {  
+    height: 600px;  
+    width: 1200px;  
+    margin-top: 50px !important;    
+    margin: 0 auto;  
+}
+.frame_5 {  
+    height: 600px;  
+    width: 1200px;  
+    margin-top: 50px !important;    
+    margin: 0 auto;  
 }
 /* END CODE HERE */

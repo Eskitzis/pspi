@@ -3,6 +3,7 @@
     display: flex;
     height: 150px;
     border-bottom: 1px solid lightgray;
+    justify-content: space-between;
 }
 .header .logo{
     display: flex;
@@ -17,6 +18,7 @@
     display: flex;
     align-items: center;
     width: auto;
+    padding-right: 75px;
 }
 .header .navMenu ul{
     display: flex;

@@ -16,7 +16,6 @@
 .header .navMenu{
     display: flex;
     align-items: center;
-    justify-content: space-between;
     width: auto;
 }
 .header .navMenu ul{

@@ -41,6 +41,7 @@
     border-top: 1px solid lightgray;
     text-align: center;
     line-height: 100px;
+    margin-top: 50px !important;
 }
 .frame_1{
     display: flex;
@@ -85,11 +86,19 @@
 .frame_2 .content_2 .content_boxes{
     width: 300px;
     height: 200px;
-    border: 1px solid black;
 }
 .frame_2 .content_2 .content_boxes img{
     width: 300px;
     height: 200px;
 }
-
+.frame_3{
+    height: 600px;
+    width: 1200px;
+    margin-top: 50px !important;
+    margin: 0 auto;
+}
+.frame_3 iframe{
+    width: 1200px;
+    height: 600px;
+}
 /* END CODE HERE */

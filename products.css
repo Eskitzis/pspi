@@ -1,3 +1,33 @@
 /* BEGIN CODE HERE */
-
+.header {
+    display: flex;
+    height: 150px;
+    border-bottom: 1px solid lightgray;
+    justify-content: space-between;
+}
+.header .logo {
+    display: flex;
+    align-items: center;
+    padding-left: 75px;
+}
+.header .logo img {
+    height: 58px;
+    width: 250px;
+}
+.header .navMenu {
+    display: flex;
+    align-items: center;
+    width: auto;
+    padding-right: 75px;
+}
+.header .navMenu ul {
+    display: flex;
+    list-style: none;
+}
+.header .navMenu ul li {
+    padding: 0px 20px;
+}
+.header .navMenu ul li a {
+    color: black;
+}
 /* END CODE HERE */

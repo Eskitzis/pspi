@@ -7,11 +7,27 @@
 .header .logo{
     display: flex;
     align-items: center;
+    padding-left: 75px;
+}
+.header .logo img{
+    height: 58px;
+    width: 250px;
 }
 .header .navMenu{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+}
+.header .navMenu ul{
+    display: flex;
+    list-style: none;
+}
+.header .navMenu ul li{
+    padding: 0px 20px;
+}
+.header .navMenu ul li a{
+    text-decoration: none;
+    color: black;
 }
 /* END CODE HERE */

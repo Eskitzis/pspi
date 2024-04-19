@@ -74,6 +74,11 @@
     display: flex;
     align-items: baseline;
     width: 60%;
+    margin-top: 20px;
+}
+.submit_button {
+    margin-top: 20px;
+    text-align: end;
 }
 
 

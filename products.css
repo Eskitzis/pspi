@@ -49,4 +49,33 @@
     margin-top: 50px !important;    
     margin: 0 auto;  
 }
+.frame_4 .search_bar {
+    display: flex;
+    align-items: baseline;
+}
+.frame_4 .search_bar label {
+    margin-right: 10px;
+}
+.frame_4 .input-group {
+    flex: 1;
+}
+.frame_4 .input-group button{
+    background-color: #0C6DFD;
+    color: white;
+}
+.frame_4 .results {
+    margin-top: 20px;
+}
+.frame_4 .results table{
+    width: 100%;
+    margin-top: 20px;
+}
+.frame_5 .form-group{
+    display: flex;
+    align-items: baseline;
+    width: 60%;
+}
+
+
+
 /* END CODE HERE */

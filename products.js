@@ -1,48 +1,43 @@
 const api = "http://127.0.0.1:5000";
 
 window.onload = () => {
-    // BEGIN CODE HERE
     const searchInput = document.getElementById('search_input');
     const searchButton = document.getElementById('button-addon2');
+    const productForm = document.getElementById('product_form');
 
     searchButton.addEventListener('click', searchButtonOnClick);
-
-    const productForm = document.getElementById('product_form');
     productForm.addEventListener('submit', productFormOnSubmit);
-    // END CODE HERE
 }
 
 searchButtonOnClick = () => {
-    // BEGIN CODE HERE
     const searchInput = document.getElementById('search_input');
     const searchQuery = searchInput.value;
 
     fetch(`${api}/products/search?q=${searchQuery}`)
         .then(response => response.json())
         .then(products => {
-            // Populate the results table with the search results
-            const resultsTable = document.getElementById('results');
-            resultsTable.innerHTML = '';
+            const resultsTableBody = document.getElementById('results-body');
+            resultsTableBody.innerHTML = ''; // Clear the table body
+
             products.forEach((product) => {
                 const row = document.createElement('tr');
                 row.innerHTML = `
-          <td>${product.id}</td>
-          <td>${product.name}</td>
-          <td>${product.productionYear}</td>
-          <td>${product.price}</td>
-          <td>${product.color}</td>
-          <td>${product.size}</td>
-        `;
-                resultsTable.appendChild(row);
+                    <td>${product.id}</td>
+                    <td>${product.name}</td>
+                    <td>${product.productionYear}</td>
+                    <td>${product.price}</td>
+                    <td>${product.color}</td>
+                    <td>${product.size}</td>
+                    <td><button class="btn btn-primary">Edit</button> <button class="btn btn-danger">Delete</button></td>
+                `;
+                resultsTableBody.appendChild(row);
             });
         })
-    .catch(error => console.error('Error searching for products:', error));
-    // END CODE HERE
+        .catch(error => console.error('Error searching for products:', error));
 }
 
 productFormOnSubmit = (event) => {
-    // BEGIN CODE HERE
-    event.preventDefault(); 
+    event.preventDefault();
 
     const nameInput = document.getElementById('new_name');
     const productionYearInput = document.getElementById('new_production_year');
@@ -74,5 +69,4 @@ productFormOnSubmit = (event) => {
             sizeInput.value = '';
         })
         .catch(error => console.error('Error adding product:', error));
-    // END CODE HERE
 }
